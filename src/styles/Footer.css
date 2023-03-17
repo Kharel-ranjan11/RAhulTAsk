@@ -1,0 +1,39 @@
+  .first li{
+      list-style: none;
+  }
+  .first li  h3{
+      color: red;
+      cursor: pointer;
+      font-weight: bold;
+  }
+  .first li a{
+      text-decoration: none;
+      color: black;
+      font-weight:bold;
+  }
+  .contact{
+    background-color:#D9D9D9;
+    border-radius: 5rem;
+    padding:7px;
+    padding-left:9px;
+ 
+}
+.sm{
+    border-radius:5rem;
+    background-color: #ED177E;
+}
+.brand{
+    color:#008CAB;
+}
+.copyright{
+    padding-top:17px;
+}
+.icon li{
+    list-style: none;
+}
+.icon li img{
+    margin-right: 5px;    
+}
+.footerbuttom{
+    justify-content: center;
+}
