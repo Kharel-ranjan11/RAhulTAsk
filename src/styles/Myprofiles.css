@@ -1,0 +1,58 @@
+.myprofile{
+    /* background-color: rgba(255, 255, 255, 0.712); */
+    border-radius: 7px;
+    height: 80vh;
+    }
+    .myprofile h6{
+        margin-top: 10px;
+        text-align: start;
+        font-size: 16px;
+        font-weight: 600;
+        color: rgb(59, 59, 59);
+        text-transform: uppercase;
+    }
+    .myprofile ul {
+        margin-top: 25px;
+        padding: 0;
+    }
+    .myprofile ul li{
+        list-style: none;
+        display: flex; 
+        justify-content: start;
+        position: relative;
+    }
+    .myprofile ul li a{
+       text-decoration: none;
+       font-size: 16px;
+       color: black;   
+       margin-bottom: 30px;
+       
+    }
+    .myprofile ul li a:hover{
+        color: #ec1c24;
+        transition:all 0.2s ease-in-out;   
+    }
+    .myprofile ul li a i{
+     margin-right: 7px;
+     color: #662d91;
+    
+    }
+    .myprofile-icon{
+        margin-right: 5px;
+        font-size: 20px;
+        color: #662d91;
+    }
+    hr {
+        position: relative;
+        top: 0;
+    }
+    .myprofile .badge1{
+        background-color:#ec1c24 ;
+        height: 10px;
+        width: 10px;
+        border-radius: 50%;
+        position: absolute;
+        left: 8rem;
+        bottom: 2.3rem;
+      
+    }
