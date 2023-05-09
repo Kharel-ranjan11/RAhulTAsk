@@ -1,112 +1,149 @@
-
-.helpsection{
+.helpsection {
+  width: 100%;
+  padding: 4rem 0;
+  border-bottom: 1px solid #ed177e67;
+}
+.helpsection-first-details h1 {
+  text-align: center;
+  font-size: 25px;
+  padding-bottom: 2rem;
+}
+.helpsection-first-details-contact-title {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: rgba(57, 57, 57, 0.872);
+}
+.helpsection-first-details-contact-title h5 {
+  font-size: 18px;
+  color: #ed177e;
+}
+.helpsection-first-details-contact-title p {
+  font-size: 16px;
+  color: #666;
+}
+.helpsection-first-details-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.helpsection-first-details-contact .accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+@media (width<503px) {
+  .helpsection-first-details-contact .accordion {
+    display: grid;
+    width: fit-content;
+    align-self: center;
+    padding: 10px;
+  }
+  .accordion-item {
     width: 100%;
-    padding:4rem 0;
-    border-bottom: 1px solid #ed177e67;
+  }
+  .accordion-body p {
+    text-align: justify;
+  }
 }
-.helpsection-first-details h1{
- text-align: center;
- font-size: 25px;
- padding-bottom: 2rem;
+.helpsection-second-details {
+  display: flex;
+  padding-top: 12px;
+  justify-content: space-between;
+  gap: 1rem;
 }
-.helpsection-first-details-contact-title{
+@media (width<770px) {
+  .helpsection-second-details {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    padding: 1rem 20rem;
+    justify-content: space-between;
+    gap: 1rem;
+  }
 }
-.helpsection-first-details-contact-title h5{
-    font-size: 18px;
-    color:  #ed177e;
-}
-.helpsection-first-details-contact-title p{
-    font-size: 16px;
-    color: #666;
-}
-.helpsection-first-details-contact{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-.helpsection-first-details-contact .accordion{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-.helpsection-second-details{
-    padding-top: 3rem;
-    display: flex;
+@media (width<540px) {
+  .helpsection-second-details {
+    display: grid;
     justify-content: center;
     gap: 1rem;
-    text-align: center;
+  }
 }
-.helpsection-second-details-firstdiv{
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* background-color: white; */
+.helpsection-second-details-firstdiv {
+  border-radius: 5px;
+  width: 300px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  padding: 10px;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* background-color: white; */
 }
-.helpsection-second-details-firstdiv i{
-    font-size: 30px;
+.helpsection-second-details-firstdiv i {
+  font-size: 30px;
 }
-.helpsection-second-details-seconddiv i{
-    font-size: 30px;
+.helpsection-second-details-seconddiv i {
+  font-size: 30px;
 }
-.helpsection-second-details-thirddiv i{
-    font-size: 30px;
+.helpsection-second-details-thirddiv i {
+  font-size: 30px;
 }
-.helpsection-second-details-firstdiv p:nth-of-type(1){
-   color: #ed177e;
+.helpsection-second-details-firstdiv p:nth-of-type(1) {
+  color: #ed177e;
 }
-.helpsection-second-details-firstdiv p{
-    font-size: 14px;
-    margin: 0;
+.helpsection-second-details-firstdiv p {
+  font-size: 14px;
+  margin: 0;
 }
-.helpsection-second-details-firstdiv p:last-child:hover{
-   text-decoration: underline;
-   cursor: pointer;
+.helpsection-second-details-firstdiv p:last-child:hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.helpsection-second-details-seconddiv p{
-    font-size: 14px;
-    margin: 0;
+.helpsection-second-details-seconddiv p {
+  font-size: 14px;
+  margin: 0;
 }
-.helpsection-second-details-seconddiv p:nth-of-type(1){
-    color: #ed177e;
+.helpsection-second-details-seconddiv p:nth-of-type(1) {
+  color: #ed177e;
 }
-.helpsection-second-details-seconddiv p:nth-of-type(1):hover{
-    text-decoration: underline;
-    cursor: pointer;
+.helpsection-second-details-seconddiv p:nth-of-type(1):hover {
+  text-decoration: underline;
+  cursor: pointer;
 }
-.helpsection-second-details-seconddiv{
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-    /* background-color: white; */
-}
-.helpsection-second-details-thirddiv{
-    flex-basis: 20%;
-    display: flex;
-    flex-direction: column;
-     justify-content: center;
-    text-align: center;
-    padding-top: 1.2rem;
-    /* background-color: white; */
-}
-.helpsection-second-details-thirddiv p{
-    font-size: 14px;
-    margin: 0;
-}
-.helpsection-second-details-thirddiv p:nth-of-type(1){
-    color: #ed177e;
-}
-.helpsection-second-details-thirddiv p:nth-of-type(2):hover{
-    text-decoration: underline;
-    cursor: pointer;
-}
+.helpsection-second-details-seconddiv {
+  padding: 10px;
+  width: 300px;
 
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  /* background-color: white; */
+}
+.helpsection-second-details-thirddiv {
+  padding: 10px;
+  width: 300px;
+
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 1.2rem;
+  /* background-color: white; */
+}
+.helpsection-second-details-thirddiv p {
+  font-size: 14px;
+  margin: 0;
+}
+.helpsection-second-details-thirddiv p:nth-of-type(1) {
+  color: #ed177e;
+}
+.helpsection-second-details-thirddiv p:nth-of-type(2):hover {
+  text-decoration: underline;
+  cursor: pointer;
+}

@@ -11,7 +11,7 @@ const Third = () => {
     <>
       <div className="third">
         <div className="container-fluid px-0">
-          <div className="row">
+          <div className="">
             <OwlCarousel
               className="owl-theme "
               items={1}

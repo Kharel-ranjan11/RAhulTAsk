@@ -8,9 +8,7 @@ import test2 from "../images/test2.png";
 import test3 from "../images/test3.png";
 import SwiperCore, { Pagination, Autoplay, Navigation } from "swiper";
 SwiperCore.use([Autoplay, Pagination, Navigation]);
-
 const VerticalSlider = () => {
-
   return (
     <>
       <div className="swipe">
@@ -30,7 +28,7 @@ const VerticalSlider = () => {
           modules={[Pagination]}
           className="mySwiper swiper-container"
           breakpoints={{     
-            292: {
+            500: {
               direction:"horizontal",
               slidesPerView: 1,
             },

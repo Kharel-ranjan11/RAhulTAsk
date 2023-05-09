@@ -1,40 +1,31 @@
 import React from 'react'
 import '../styles/Profile_page.css'
-import Layout from './Layout'
 import Filter from '../content/Filter'
-import Searchedlist from '../content/Searchedlist'
+import Layout from './Layout'
+import { Link } from 'react-router-dom'
 const Profile_Page = () => {
   return (
     <>
-  <Layout>
-  <div className="profiles py-4">
-    <div className="container">
-        <div className="profile-section position-relative">
-          <Filter/>
-            <div className='profile-right px-3'>
-              <div className="profile-right-title">
-               <h1>Here is your Perfect Match...</h1>
-               <div className="profile-details">
-                  <div className="p1"> <p className=''>20 <span>Profiles</span></p></div>
-                  <div className="p1"> <p>Female, <span>18 - 25 Years</span></p></div>
-               </div>
-              </div>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
-                <Searchedlist/>
+      <Layout>
+        <div className='container'>
+          <div className='row'>
+            <div className='col-6 border border-success'>
+              <Filter />
             </div>
+            <div className='col-6 border border-success'>
+              <div className='user-details-right'>
+                <Link to='/userprofile'>
+                  <button className='searchedlist-outline-btn'>
+                    View Profile
+                  </button>
+                </Link>
+                <button className='searchedlist-btn'>Connect</button>
+              </div>
+            </div>
+          </div>
         </div>
-    </div>
-  </div>
-  </Layout>
+      </Layout>
     </>
   )
 }
-
 export default Profile_Page
