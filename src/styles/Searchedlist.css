@@ -1,71 +1,42 @@
-.userDetails {
+* {
+  margin: 0;
+}
+.cards {
+  margin: 12px;
+  background-color:#F99B7D;
+  width: 500px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.contents {
   display: flex;
-  justify-content: space-between;
-  width: 850px;
-  align-items: center;
-  padding-right: 10px;
-  background: silver;
+  line-height: 22px;
 }
 .content {
+  display: grid;
+  padding-left: 10px;
+}
+.btns{
   display: flex;
-  background: red;
-  justify-content: space-between;
+align-items: center;
+padding: 2px;
 }
-.details {
+.btns>button{
+  flex-grow: 1;
+  margin: 2px;
+}
+.info {
   display: flex;
-}
-.image > img {
-  width: 150px;
-  height: 150px;
-  object-fit: cover;
-}
-.DetailsOne {
-  padding-left: 5px;
-  padding-right: 5px;
-  border-right: 2px solid white;
-}
-.DetailsTwo {
+  justify-content: flex-start;
   padding-left: 10px;
   padding-right: 10px;
-}
-.searchedlist-outline-btn,
-.searchedlist-btn {
-  padding: 6px 20px;
-  margin: 5px 0px;
-  width: 100%;
-  font-size: 14px;
-  color: white;
-  border: none;
   border-radius: 10px;
-  background-image: linear-gradient(140deg, #ec1c24, #ff1f70, #ed177e, #662d91);
+
 }
-.user-details-left > p,
-.user-details-middle > p {
-  line-height: 15px;
-  position: relative;
-  top: 30px;
-}
-@media (width<1200px) {
-  .userDetails {
-    max-width: max-content;
-    display: grid;
-  }
-}
-@media (width<992px) {
-  .userDetails {
-    width: 500px;
-  }
-  .content {
-    display: grid;
-  }
-  .user-details-left > p,
-  .user-details-middle > p {
-    line-height: 15px;
-    position: relative;
-    top: 10px;
-  }
-  .DetailsOne,
-  .DetailsTwo {
-    padding-bottom: 5px;
-  }
+
+.info > div > p {
+  font-size: 15px;
+  padding: 5px;
 }
