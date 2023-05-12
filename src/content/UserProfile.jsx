@@ -29,6 +29,7 @@ const UserProfile = () => {
                   <button className='searchedlist-btn'>Connect</button>
                 </div>
               </div>
+              
               <div className='userprofile-about-photos py-3'>
                 <ul className='nav nav-pills' id='pills-tab' role='tablist'>
                   <li className='nav-item' role='presentation'>
